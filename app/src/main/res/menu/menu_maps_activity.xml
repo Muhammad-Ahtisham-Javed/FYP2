@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/item1_login_menu_maps_activity"
+        android:title="Login"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item2_register_hostel_menu_maps_activity"
+        android:title="Register Hostel"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item3_help_menu_maps_activity"
+        android:title="Help"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item4_terms_and_conditions_menu_maps_activity"
+        android:title="Terms And Conditions"
+        app:showAsAction="never" />
+
+</menu>

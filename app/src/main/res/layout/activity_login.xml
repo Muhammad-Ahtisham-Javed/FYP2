@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/ll_whole_login_activity"
+        style="@style/myapp_style_activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/myapp_style_tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_login" />
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="70dp"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/manager_login_username"
+            style="@style/myapp_style_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="@string/et_username" />
+
+
+        <EditText
+            android:id="@+id/manager_login_password"
+            style="@style/myapp_style_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:hint="@string/et_password"
+            android:inputType="textPassword" />
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/gray" />
+
+        <Button
+            style="@style/myapp_style_btn"
+            android:id="@+id/btn_login_hostel_manager_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/myapp_style_btn"/>
+
+        <Button
+            style="@style/myapp_style_btn"
+            android:id="@+id/btn_signup_ll_hostel_manager_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_signup"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/myapp_style_btn"/>
+
+        <TextView
+            style="@style/myapp_style_tv_label"
+            android:id="@+id/tv_forgot_password_hostel_manager_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/txt_resetPassword" />
+
+
+    </LinearLayout>
+</ScrollView>

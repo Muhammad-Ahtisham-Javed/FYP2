@@ -1,0 +1,120 @@
+<resources>
+
+    <string name="app_name">Hostel Hub</string>
+
+
+    <!--    SignUp  -->
+
+    <string name="txt_register">Registration</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="btn_register">Create Account</string>
+    <string name="next">Next</string>
+    <string name="et_username">Name</string>
+    <string name="et_loginName">Login Name</string>
+    <string name="et_password">Password</string>
+    <string name="et_new_password">New Password</string>
+    <string name="et_confirm_new_password">Confirm New Password</string>
+    <string name="et_CNIC">CNIC#</string>
+    <string name="et_contact">Contact#</string>
+    <string name="houseNo">House No.</string>
+    <string name="streetNo">Street No.</string>
+    <string name="locality">Locality</string>
+    <string name="postalCode">Postal Code</string>
+    <string name="city">City</string>
+    <string name="email_signup">Email</string>
+
+    <!--    HostelSeekerLogin -->
+
+    <string name="txt_login">Login</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_signup">SignUp</string>
+    <string name="txt_resetPassword">Forget Password!</string>
+
+    <!--    Hostel Manager Home-->
+
+    <string name="txt_view_hostel_ll_hostel_manager">View Hostels</string>
+    <string name="txt_add_hostel_ll_hostel_manager">Add Hostel</string>
+    <string name="txt_Edit_hostel_ll_hostel_manager">Edit Profile</string>
+
+
+    <!-- Strings for hostel seeker related activities -->
+
+    <string name="sr_no_activity_hostel_detail">Sr #</string>
+    <string name="facility_activity_hostel_detail">Facility</string>
+    <string name="availability_activity_hostel_detail">Availability</string>
+    <string name="one_activity_hostel_detail">1</string>
+    <string name="two_activity_hostel_detail">2</string>
+    <string name="three_activity_hostel_detail">3</string>
+    <string name="four_activity_hostel_detail">4</string>
+    <string name="five_activity_hostel_detail">5</string>
+    <string name="six_activity_hostel_detail">6</string>
+    <string name="seven_activity_hostel_detail">7</string>
+    <string name="eight_activity_hostel_detail">8</string>
+    <string name="mess_activity_hostel_detail">Mess</string>
+    <string name="gas_activity_hostel_detail">Gas</string>
+    <string name="electricity_activity_hostel_detail">Electricity</string>
+    <string name="wifi_activity_hostel_detail">Wifi</string>
+    <string name="ac_activity_hostel_detail">AC</string>
+    <string name="aBaths_activity_hostel_detail">Attached Baths</string>
+    <string name="ratings_activity_hostel_detail">Ratings</string>
+    <string name="request_reservation_activity_hostel_seeker_home">Request Reservation</string>
+    <string name="communicate_activity_hostel_seeker_home">Communicate</string>
+    <string name="delete_account_activity_hostel_seeker_home">Delete Account</string>
+    <string name="edit_profile_activity_hostel_seeker_home">Edit Profile</string>
+
+
+    <!-- Dummy Text -->
+    <string name="dummyText">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Turpis egestas maecenas pharetra convallis posuere morbi. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi
+        tristique. Facilisis sed odio morbi quis commodo. Netus et malesuada fames ac. Posuere ac ut consequat semper viverra nam.
+        Tincidunt dui ut ornare lectus sit amet. Eget felis eget nunc lobortis. Donec ac odio tempor orci. Mollis aliquam ut porttitor
+        leo a diam. Eget arcu dictum varius duis at consectetur lorem donec massa. Pellentesque habitant morbi tristique senectus et
+        netus. Sagittis orci a scelerisque purus semper eget. At lectus urna duis convallis convallis tellus id. Fermentum posuere urna
+        nec tincidunt praesent semper feugiat nibh sed. Dictumst vestibulum rhoncus est pellentesque elit. Bibendum at varius vel
+        pharetra vel turpis. Tempor orci dapibus ultrices in iaculis nunc sed augue. Vivamus at augue eget arcu dictum varius.
+        Mi eget mauris pharetra et ultrices neque.Pulvinar mattis nunc sed blandit libero. A condimentum vitae sapien pellentesque
+        habitant morbi. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Magna ac placerat vestibulum lectus mauris.
+        Lectus sit amet est placerat in. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Ultrices in
+        iaculis nunc sed. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Pellentesque elit ullamcorper dignissim
+        cras tincidunt lobortis feugiat vivamus at. Ullamcorper malesuada proin libero nunc consequat. Rutrum quisque non
+        tellus orci. A pellentesque sit amet porttitor. Libero id faucibus nisl tincidunt eget. Odio ut sem nulla pharetra diam
+        sit amet nisl. Faucibus pulvinar elementum integer enim neque volutpat ac.
+        Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Sed vulputate odio ut enim blandit volutpat maecenas
+        volutpat blandit. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum.
+    </string>
+
+    <string name="Send">Send</string>
+    <string name="Sampleleft">Sampleleft</string>
+    <string name="Sample">Sample</string>
+    
+    <string-array name="spinner_type_hostelslist_activity">
+        <item>Type</item>
+        <item>Boys</item>
+        <item>Girls</item>
+    </string-array>
+
+    <string-array name="spinner_bed_hostelslist_activity">
+        <item>Bed</item>
+        <item>Single Bed</item>
+        <item>Double Bed</item>
+        <item>Dormitory</item>
+    </string-array>
+
+    <string-array name="spinner_price_hostelslist_activity">
+        <item>Price</item>
+        <item>Low to High</item>
+        <item>High to Low</item>
+    </string-array>
+
+    <string-array name="spinner_others_hostelslist_activity">
+        <item>Others</item>
+        <item>Good Mess Quality</item>
+        <item>Good Cleanliness</item>
+        <item>Good Safety</item>
+        <item>Highly Disciplined</item>
+        <item>No Time Restriction</item>
+    </string-array>
+
+</resources>

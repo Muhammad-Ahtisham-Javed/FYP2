@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".HostelManagerHome">
+
+    <RelativeLayout
+        style="@style/myapp_style_activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/rl_top_hostelmanagerhome_activity">
+
+            <ImageView
+                android:id="@+id/imgv_person_hostelmanagerhome_activity"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_person_icon" />
+
+            <TextView
+                style="@style/myapp_style_tv_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_name_hostelmanagerhome_activity"
+                android:layout_toRightOf="@id/imgv_person_hostelmanagerhome_activity"
+                android:layout_marginLeft="30dp"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="230dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/tv_name_hostelmanagerhome_activity"
+                android:layout_toRightOf="@id/imgv_person_hostelmanagerhome_activity"
+                android:background="@color/gray" />
+
+            <TextView
+                style="@style/myapp_style_tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_email_hostelmanagerhome_activity"
+                android:layout_below="@id/tv_name_hostelmanagerhome_activity"
+                android:layout_toRightOf="@id/imgv_person_hostelmanagerhome_activity"
+                android:textSize="18dp"/>
+
+            <TextView
+                style="@style/myapp_style_tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/tv_email_hostelmanagerhome_activity"
+                android:layout_toRightOf="@id/imgv_person_hostelmanagerhome_activity"
+                android:id="@+id/tv_phone_hostelmanagerhome_activity"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_below="@id/rl_top_hostelmanagerhome_activity">
+
+            <Button
+                style="@style/myapp_style_btn"
+                android:id="@+id/btn_view_hostel_ll_hostel_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/myapp_style_btn"
+                android:text="@string/txt_view_hostel_ll_hostel_manager" />
+
+            <Button
+                style="@style/myapp_style_btn"
+                android:id="@+id/btn_add_Hostel_ll_hostel_manager_home_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/myapp_style_btn"
+                android:text="@string/txt_add_hostel_ll_hostel_manager" />
+
+            <Button
+                style="@style/myapp_style_btn"
+                android:id="@+id/btn_communicate_ll_hostel_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/myapp_style_btn"
+                android:text="Communicate" />
+
+            <Button
+                style="@style/myapp_style_btn"
+                android:id="@+id/btn_view_notification_ll_hostel_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="View Notification"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/myapp_style_btn"/>
+
+
+            <Button
+                style="@style/myapp_style_btn"
+                android:id="@+id/btn_Edit_hostel_ll_hostel_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/txt_Edit_hostel_ll_hostel_manager"
+                android:textColor="@color/white"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/myapp_style_btn"/>
+
+            <Button
+                style="@style/myapp_style_btn"
+                android:id="@+id/btn_delete_account_ll_hostel_manager_home_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Delete Account"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/myapp_style_btn"/>
+
+            <Button
+                style="@style/myapp_style_btn"
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="LogOut"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/myapp_style_btn" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

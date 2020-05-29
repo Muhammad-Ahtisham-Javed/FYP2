@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1054113598978",
+    "firebase_url": "https://hostel-hub-268616.firebaseio.com",
+    "project_id": "hostel-hub-268616",
+    "storage_bucket": "hostel-hub-268616.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054113598978:android:e9ce58bfc908bb994b211b",
+        "android_client_info": {
+          "package_name": "com.pucit.hostelhubupdated"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054113598978-hq7apg7ftelob56rcn60fg0smgfsc1ue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pucit.hostelhubupdated",
+            "certificate_hash": "edce0563efeb9a66d198f11f302a365b5caac9ec"
+          }
+        },
+        {
+          "client_id": "1054113598978-uv50rf00tt1j4epu1j931ttkrt39va8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhiHzWkiVnr-5Y7JJSe1l8lxoGOrSiynI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054113598978-uv50rf00tt1j4epu1j931ttkrt39va8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

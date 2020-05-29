@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        style="@style/myapp_style_activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/myapp_style_tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_register"/>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="70dp"
+            android:background="@color/gray" />
+
+        <EditText
+            style="@style/myapp_style_et"
+            android:id="@+id/manager_signup_login_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="Login Name"/>
+
+        <EditText
+            style="@style/myapp_style_et"
+            android:id="@+id/manager_signup_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="@string/et_username"/>
+
+        <EditText
+            style="@style/myapp_style_et"
+            android:id="@+id/manager_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="@string/et_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            style="@style/myapp_style_et"
+            android:id="@+id/manager_signup_cnic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/et_CNIC"
+            android:inputType="number"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
+
+        <EditText
+            style="@style/myapp_style_et"
+            android:id="@+id/manager_signup_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_contact"
+            android:inputType="number"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
+
+        <EditText
+            style="@style/myapp_style_et"
+            android:id="@+id/manager_signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_signup"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"/>
+
+        <CheckBox
+            style="@style/myapp_style_tv_label"
+            android:id="@+id/cbtn_hostel_manager_signup_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:text="Hostel Manager" />
+
+        <CheckBox
+            style="@style/myapp_style_tv_label"
+            android:id="@+id/cbtn_hostel_seeker_signup_activity"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hostel Seeker" />
+
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/gray" />
+
+
+        <Button
+            style="@style/myapp_style_btn"
+            android:id="@+id/btn_next_signup_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/next"
+            android:background="@drawable/myapp_style_btn"/>
+
+    </LinearLayout>
+</ScrollView>

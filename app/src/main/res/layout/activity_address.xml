@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".AddressActivity">
+
+    <RelativeLayout
+        style="@style/myapp_style_activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/ll_top_address_activity">
+
+            <TextView
+                style="@style/myapp_style_tv_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_register" />
+
+            <View
+                android:layout_width="230dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="70dp"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/et_houseNo_address_activity"
+                style="@style/myapp_style_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/houseNo"
+                android:inputType="number"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"/>
+
+            <EditText
+                android:id="@+id/et_streetNo_address_activity"
+                style="@style/myapp_style_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/streetNo"
+                android:inputType="number"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"/>
+
+            <EditText
+                android:id="@+id/et_postalCode_address_activity"
+                style="@style/myapp_style_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/postalCode"
+                android:inputType="number"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"/>
+
+            <EditText
+                android:id="@+id/et_locality_address_activity"
+                style="@style/myapp_style_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/locality"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"/>
+
+            <EditText
+                android:id="@+id/et_city_address_activity"
+                style="@style/myapp_style_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/city"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"/>
+
+            <View
+                android:layout_width="230dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+
+            <Button
+                android:id="@+id/btn_anonymous_address_activity"
+                style="@style/myapp_style_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/myapp_style_btn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top_address_activity"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/btn_choose_images_address_activity"
+                style="@style/myapp_style_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/myapp_style_btn"
+                android:text="Choose Images" />
+
+            <Button
+                android:id="@+id/btn_upload_images_address_activity"
+                style="@style/myapp_style_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/myapp_style_btn"
+                android:text="Done" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

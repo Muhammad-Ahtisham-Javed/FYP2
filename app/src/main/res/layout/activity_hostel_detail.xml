@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HostelDetail"
+    android:background="@drawable/background_image">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/myapp_style_activity_margin">
+
+        <ViewFlipper
+            android:id="@+id/view_flipper_hostel_detail_activity"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            style="@style/myapp_style_tv_label"
+            android:id="@+id/tv_name_activity_hostel_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_flipper_hostel_detail_activity"
+            android:layout_centerInParent="true"
+            android:paddingTop="5dp"
+            android:textStyle="bold|italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/tv_name_activity_hostel_detail"
+            android:background="@color/gray" />
+
+        <TextView
+            style="@style/myapp_style_tv_label"
+            android:id="@+id/tv_location_activity_hostel_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_activity_hostel_detail"
+            android:paddingTop="5dp" />
+
+        <TextView
+            style="@style/myapp_style_tv_label"
+            android:id="@+id/tv_type_activity_hostel_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location_activity_hostel_detail"
+            android:paddingTop="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/tv_type_activity_hostel_detail"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_rooms_activity_hostel_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_type_activity_hostel_detail">
+
+            <TextView
+                style="@style/myapp_style_tv_label"
+                android:id="@+id/tv_tRooms_activity_hostel_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/myapp_style_tv_label"
+                android:id="@+id/tv_aRooms_activity_hostel_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/ll_rooms_activity_hostel_detail"
+            android:background="@color/gray" />
+
+        <TableLayout
+            android:id="@+id/tbl_facilities_activity_hostel_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_rooms_activity_hostel_detail">
+
+            <TableRow android:padding="3dp">
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sr_no_activity_hostel_detail"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/facility_activity_hostel_detail"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/availability_activity_hostel_detail"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow android:padding="3dp">
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/one_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mess_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:id="@+id/tv_mess_activity_hostel_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow android:padding="3dp">
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/two_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gas_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:id="@+id/tv_gas_activity_hostel_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow android:padding="3dp">
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/three_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/electricity_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:id="@+id/tv_electricity_activity_hostel_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow android:padding="3dp">
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/four_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/wifi_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:id="@+id/tv_wifi_activity_hostel_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow android:padding="3dp">
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/five_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ac_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:id="@+id/tv_ac_activity_hostel_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow android:padding="3dp">
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/six_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/aBaths_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:id="@+id/tv_aBaths_activity_hostel_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow android:padding="3dp">
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/seven_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ratings_activity_hostel_detail" />
+
+                <TextView
+                    style="@style/myapp_style_tv_label"
+                    android:id="@+id/tv_ratings_activity_hostel_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/tbl_facilities_activity_hostel_detail"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_bed_activity_hostel_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbl_facilities_activity_hostel_detail"
+            android:orientation="vertical" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/ll_bed_activity_hostel_detail"
+            android:background="@color/gray"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            style="@style/myapp_style_btn"
+            android:id="@+id/btn_save_rating_hostel_detail_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_bed_activity_hostel_detail"
+            android:text="Give Feedback"
+            android:background="@drawable/myapp_style_btn"
+            android:layout_margin="20dp" />
+
+    </RelativeLayout>
+</ScrollView>

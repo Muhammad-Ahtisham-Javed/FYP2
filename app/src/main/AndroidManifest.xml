@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pucit.hostelhubupdated">
+    <!-- Permission to access internet to send email and load data from database -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permission to pick images from gallery -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Permission to use google maps and access current location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_yellow_rounded"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon_yellow_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".FeedbackActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".AddressActivity" />
+        <activity android:name=".NotificationList" />
+        <activity android:name=".OTPConfirm" />
+        <activity android:name=".FeedbackList" />
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".PopUpCnic" />
+        <activity android:name=".HostelSeekerHome" />
+        <activity android:name=".HostelsList" />
+        <activity android:name=".HostelDetail" />
+        <activity android:name=".HostelManagerHome" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".AddHostel" />
+        <activity android:name=".Help" />
+        <activity android:name=".TermsAndConditions" />
+        <activity android:name=".NewPassword" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

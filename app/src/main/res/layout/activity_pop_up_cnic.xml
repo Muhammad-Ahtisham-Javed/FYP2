@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PopUpCnic"
+    android:background="@color/white"
+    android:layout_marginLeft="90dp"
+    android:layout_marginRight="90dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your CNIC"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_cnic_popup_cnic_activity"
+        android:inputType="number"
+        android:maxLength="13"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent" />
+
+    <Button
+        style="@style/myapp_style_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit_popup_cnic_activity"
+        android:text="Submit"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"/>
+
+
+</LinearLayout>

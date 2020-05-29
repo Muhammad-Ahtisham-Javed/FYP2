@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPConfirm"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        style="@style/myapp_style_activity_margin">
+
+        <TextView
+            style="@style/myapp_style_tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm OTP" />
+
+
+        <EditText
+            style="@style/myapp_style_et"
+            android:id="@+id/et_mobilecode_otpconfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:hint="Enter code!"
+            android:inputType="number"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:maxLength="4"/>
+
+        <Button
+            style="@style/myapp_style_btn"
+            android:id="@+id/btn_confrim_confrimotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:background="@drawable/myapp_style_btn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

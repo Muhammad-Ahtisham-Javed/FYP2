@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/myapp_style_activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgV_feedbacklist_item"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/ic_feedback_icon" />-->
+
+        <TextView
+            android:id="@+id/tv_name_feedbacklist_item"
+            style="@style/myapp_style_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tv_date_feedbacklist_item"
+            style="@style/myapp_style_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:paddingTop="8dp"
+            android:paddingRight="10dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_rating_cleanliness_feedbacklist_item"
+            style="@style/myapp_style_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_feedbacklist_item"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_rating_discipline_feedbacklist_item"
+            style="@style/myapp_style_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating_cleanliness_feedbacklist_item"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_rating_mess_feedbacklist_item"
+            style="@style/myapp_style_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating_discipline_feedbacklist_item"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_rating_safety_feedbacklist_item"
+            style="@style/myapp_style_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating_mess_feedbacklist_item"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_rating_time_strictness_feedbacklist_item"
+            style="@style/myapp_style_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating_safety_feedbacklist_item"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_overall_rating_feedbacklist_item"
+            style="@style/myapp_style_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating_time_strictness_feedbacklist_item"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_comment_feedbacklist_item"
+            style="@style/myapp_style_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_overall_rating_feedbacklist_item"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item1_update_menu_for_manager_hostel_detail_activity"
+        android:title="Update"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item2_delete_menu_for_manager_hostel_detail_activity"
+        android:title="Delete"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item3_feedback_menu_for_manager_hostel_detail_activity"
+        android:title="Ratings/Feedbacks"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".HostelSeekerHome">
+
+    <RelativeLayout
+        style="@style/myapp_style_activity_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_hostelseekerhome_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imgv_person_hostelseekerhome_activity"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_person_icon" />
+
+            <TextView
+                android:id="@+id/tv_name_hostelseekerhome_activity"
+                style="@style/myapp_style_tv_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/imgv_person_hostelseekerhome_activity"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="230dp"
+                android:layout_height="3dp"
+                android:layout_below="@id/tv_name_hostelseekerhome_activity"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/imgv_person_hostelseekerhome_activity"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/tv_email_hostelseekerhome_activity"
+                style="@style/myapp_style_tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_hostelseekerhome_activity"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/imgv_person_hostelseekerhome_activity"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_phone_hostelseekerhome_activity"
+                style="@style/myapp_style_tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_email_hostelseekerhome_activity"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/imgv_person_hostelseekerhome_activity"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_hostel_seeker_home_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/rl_top_hostelseekerhome_activity">
+
+            <Button
+                android:id="@+id/btn_request_reg_hostel_seeker_home_activity"
+                style="@style/myapp_style_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/myapp_style_btn"
+                android:text="@string/request_reservation_activity_hostel_seeker_home" />
+
+
+            <Button
+                android:id="@+id/btn_communicate_hostel_seeker_home_activity"
+                style="@style/myapp_style_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/myapp_style_btn"
+                android:text="@string/communicate_activity_hostel_seeker_home" />
+
+            <Button
+                android:id="@+id/btn_delete_profile_hostel_seeker_home_activity"
+                style="@style/myapp_style_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/myapp_style_btn"
+                android:text="@string/delete_account_activity_hostel_seeker_home" />
+
+            <Button
+                android:id="@+id/btn_edit_profile_hostel_seeker_home_activity"
+                style="@style/myapp_style_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/myapp_style_btn"
+                android:text="@string/edit_profile_activity_hostel_seeker_home" />
+
+
+            <Button
+                android:id="@+id/btn_logout_hostel_seeker_home_activity"
+                style="@style/myapp_style_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/myapp_style_btn"
+                android:text="LogOut" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
