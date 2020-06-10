@@ -8,10 +8,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RatingBar;
+import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 import androidx.annotation.NonNull;
@@ -44,9 +43,10 @@ public class HostelDetail extends AppCompatActivity {
     private TextView tv_wifi;
     private TextView tv_ac;
     private TextView tv_aBaths;
-    private TextView tv_rating;
     private LinearLayout ll_beds;
     private Button btn_feedback;
+    private TextView tv_rat_clean,tv_rat_discipline,tv_rat_mess,tv_rat_safety,tv_rat_time,tv_rat_overall;
+    private TableLayout tbl_ratings;
 
     private String cnic, role;
 
@@ -158,7 +158,6 @@ public class HostelDetail extends AppCompatActivity {
         tv_type.setText("Type: " + hostel.type.toUpperCase());
         tv_tRooms.setText("Total Rooms: " + hostel.total_rooms);
         tv_aRooms.setText("Available Rooms: " + hostel.available_rooms);
-        tv_rating.setText("Ratings module needs to be implemented!");
 
         if (hostel.mess == true)
             tv_mess.setText("Yes");
@@ -190,6 +189,15 @@ public class HostelDetail extends AppCompatActivity {
         else
             tv_aBaths.setText("No");
 
+        if (hostel.overall_rating != null){
+            tv_rat_clean.setText(hostel.cleanliness_rating + "");
+            tv_rat_discipline.setText(hostel.discipline_rating + "");
+            tv_rat_mess.setText(hostel.mess_rating + "");
+            tv_rat_safety.setText(hostel.safety_rating + "");
+            tv_rat_time.setText(hostel.time_strictness_rating + "");
+            tv_rat_overall.setText(hostel.overall_rating + "");
+        }else
+            tbl_ratings.setVisibility(View.GONE);
 
         if (hostel.single_bed_rent != 0) {
             TextView tv = new TextView(HostelDetail.this);
@@ -233,9 +241,15 @@ public class HostelDetail extends AppCompatActivity {
         tv_wifi = (TextView) findViewById(R.id.tv_wifi_activity_hostel_detail);
         tv_ac = (TextView) findViewById(R.id.tv_ac_activity_hostel_detail);
         tv_aBaths = (TextView) findViewById(R.id.tv_aBaths_activity_hostel_detail);
-        tv_rating = (TextView) findViewById(R.id.tv_ratings_activity_hostel_detail);
         ll_beds = (LinearLayout) findViewById(R.id.ll_bed_activity_hostel_detail);
+        tv_rat_clean = (TextView) findViewById(R.id.tv_cleanliness_rating_tbl_ratings_hosteldetail_activity);
+        tv_rat_discipline = (TextView) findViewById(R.id.tv_discipline_rating_tbl_ratings_hosteldetail_activity);
+        tv_rat_mess = (TextView) findViewById(R.id.tv_mess_rating_tbl_ratings_hosteldetail_activity);
+        tv_rat_safety = (TextView) findViewById(R.id.tv_safety_rating_tbl_ratings_hosteldetail_activity);
+        tv_rat_time = (TextView) findViewById(R.id.tv_time_rating_tbl_ratings_hosteldetail_activity);
+        tv_rat_overall = (TextView) findViewById(R.id.tv_overall_rating_tbl_ratings_hosteldetail_activity);
         btn_feedback = (Button) findViewById(R.id.btn_save_rating_hostel_detail_activity);
+        tbl_ratings = (TableLayout) findViewById(R.id.tbl_ratings_activity_hostel_detail);
 
         viewFlipper = (ViewFlipper) findViewById(R.id.view_flipper_hostel_detail_activity);
         viewFlipper.setFlipInterval(3000);

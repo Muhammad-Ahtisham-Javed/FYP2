@@ -42,6 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
+            android:inputType="text"
             android:hint="@string/et_username"/>
 
         <EditText
@@ -63,6 +64,7 @@
             android:layout_marginTop="10dp"
             android:hint="@string/et_CNIC"
             android:inputType="number"
+            android:maxLength="13"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"/>
 
@@ -73,6 +75,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/et_contact"
             android:inputType="number"
+            android:maxLength="11"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"/>
 

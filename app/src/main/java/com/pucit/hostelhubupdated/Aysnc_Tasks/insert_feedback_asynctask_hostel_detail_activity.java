@@ -73,9 +73,7 @@ public class insert_feedback_asynctask_hostel_detail_activity extends AsyncTask<
                                         Toast.makeText(context, "Already a feedback from this user for this particular hostel!", Toast.LENGTH_SHORT).show();
                                     } else {
                                         Database.insertFeedback(hostel_key, cnic, name,messRat,cleanRat,safeRat,disciplineRat,timeRat,overallRat, comment);
-                                        progressDialog.dismiss();
-                                        Toast.makeText(context, "Feedback saved successfully!", Toast.LENGTH_SHORT).show();
-                                        ((Activity)context).finish();
+                                        new cal_avg_ratings_feedback_activity(context,progressDialog).execute(hostel_key);
                                     }
 
                                 }

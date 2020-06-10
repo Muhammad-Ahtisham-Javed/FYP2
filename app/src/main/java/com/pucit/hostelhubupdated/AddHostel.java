@@ -159,7 +159,7 @@ public class AddHostel extends AppCompatActivity {
 
                     if (validate_hostel_name() && validate_total_rooms() && validate_available_rooms() &&
                             validate_single_bed() && validate_double_bed() && validate_dormitory() &&
-                            validateHostelType()) {
+                            validateHostelType() && validateSomeParameters()) {
 
                         Intent i = new Intent(AddHostel.this, AddressActivity.class);
                         i.putExtra("name", hostelName.getText().toString());
@@ -268,6 +268,22 @@ public class AddHostel extends AppCompatActivity {
         } else if (male.isChecked() == false && female.isChecked() == false) {
             male.setError("Please select one option!");
             female.setError("Please select one option!");
+            return false;
+        }
+        return true;
+    }
+
+    private boolean validateSomeParameters(){
+        if (Integer.parseInt(totalNoOfRooms.getText().toString()) < Integer.parseInt(availableRooms.getText().toString())){
+            availableRooms.setError("Total no of rooms should be less than available no of rooms!");
+            return false;
+        }
+        if ((Integer.parseInt(s_bed.getText().toString()) < Integer.parseInt(d_bed.getText().toString())) ||
+                (Integer.parseInt(s_bed.getText().toString()) < Integer.parseInt(dorm.getText().toString())) ||
+                (Integer.parseInt(d_bed.getText().toString()) < Integer.parseInt(dorm.getText().toString()))){
+            s_bed.setError("Conflicting values for bed rents!");
+            d_bed.setError("Conflicting values for bed rents!");
+            dorm.setError("Conflicting values for bed rents!");
             return false;
         }
         return true;

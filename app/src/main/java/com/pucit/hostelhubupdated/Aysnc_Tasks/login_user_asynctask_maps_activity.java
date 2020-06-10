@@ -47,7 +47,6 @@ public class login_user_asynctask_maps_activity extends AsyncTask<String,Void,Vo
                         i.putExtra("email",temp.email);
                         i.putExtra("phone",temp.phone);
                         progressDialog.dismiss();
-//                        context.startActivity(i);
                         ((Activity)context).startActivityForResult(i,100);
                     }
                     else if (temp.role.equalsIgnoreCase("seeker")){
@@ -56,7 +55,6 @@ public class login_user_asynctask_maps_activity extends AsyncTask<String,Void,Vo
                         i.putExtra("email",temp.email);
                         i.putExtra("phone",temp.phone);
                         progressDialog.dismiss();
-//                        context.startActivity(i);
                         ((Activity)context).startActivityForResult(i,100);
                     }
                     else{

@@ -1,10 +1,7 @@
 package com.pucit.hostelhubupdated.Database;
 
-import android.net.Uri;
 import android.util.Log;
-
 import androidx.annotation.NonNull;
-
 import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -17,9 +14,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.pucit.hostelhubupdated.Models.HostelModel;
 import com.pucit.hostelhubupdated.Models.UserModel;
-
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -190,6 +184,19 @@ public class Database {
         map.put("created_on",date);
 
         getDbReference().child("feedbacks").child(key).setValue(map);
+
+    }
+
+
+    public static void putAvgRatings(String hostelKey,String cleanRat,String disciplineRat,String messRat,String safetyRat,
+                                      String timeRat,String overallRat){
+
+        getDbReference().child("hostels").child(hostelKey).child("mess_rating").setValue(messRat);
+        getDbReference().child("hostels").child(hostelKey).child("cleanliness_rating").setValue(cleanRat);
+        getDbReference().child("hostels").child(hostelKey).child("safety_rating").setValue(safetyRat);
+        getDbReference().child("hostels").child(hostelKey).child("discipline_rating").setValue(disciplineRat);
+        getDbReference().child("hostels").child(hostelKey).child("time_strictness_rating").setValue(timeRat);
+        getDbReference().child("hostels").child(hostelKey).child("overall_rating").setValue(overallRat);
 
     }
 

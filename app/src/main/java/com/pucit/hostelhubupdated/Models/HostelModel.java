@@ -25,5 +25,10 @@ public class HostelModel implements Serializable {
     public String city;
     public String type;
     public String city_locality_name;
-
+    public String mess_rating;
+    public String cleanliness_rating;
+    public String discipline_rating;
+    public String safety_rating;
+    public String time_strictness_rating;
+    public String overall_rating;
 }

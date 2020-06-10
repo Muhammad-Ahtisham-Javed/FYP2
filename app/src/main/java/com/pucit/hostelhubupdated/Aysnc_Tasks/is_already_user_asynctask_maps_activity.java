@@ -59,14 +59,20 @@ public class is_already_user_asynctask_maps_activity extends AsyncTask<UserModel
 
                     if (obj.role.toString().equalsIgnoreCase("seeker")){
                         Intent i = new Intent(context, HostelSeekerHome.class);
+                        i.putExtra("name",obj.name);
+                        i.putExtra("email",obj.email);
+                        i.putExtra("phone",obj.phone);
                         progressDialog.dismiss();
-                        context.startActivity(i);
+                        ((Activity)context).startActivityForResult(i,100);
                         ((Activity)context).finish();
                         Toast.makeText(context, "User has been added successfully!", Toast.LENGTH_SHORT).show();
                     }else{
                         Intent i = new Intent(context, HostelManagerHome.class);
+                        i.putExtra("name",obj.name);
+                        i.putExtra("email",obj.email);
+                        i.putExtra("phone",obj.phone);
                         progressDialog.dismiss();
-                        context.startActivity(i);
+                        ((Activity)context).startActivityForResult(i,100);
                         ((Activity)context).finish();
                         Toast.makeText(context, "User has been added successfully!", Toast.LENGTH_SHORT).show();
                     }

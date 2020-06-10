@@ -24,12 +24,9 @@ import com.google.firebase.database.ValueEventListener;
 import com.pucit.hostelhubupdated.Database.Database;
 import com.pucit.hostelhubupdated.HostelDetail;
 import com.pucit.hostelhubupdated.Adapters.HostelListAdapter;
-import com.pucit.hostelhubupdated.HostelsList;
 import com.pucit.hostelhubupdated.Models.HostelModel;
 import com.pucit.hostelhubupdated.Adapters.RecyclerTouchListener;
-
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 
@@ -189,6 +186,66 @@ public class get_all_hostels_asynctask_hostels_list_activity extends AsyncTask<A
 
             }
         });
+
+        others.setSelection(0,false);
+        others.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0)
+                    Toast.makeText(context,"Please select other options",Toast.LENGTH_SHORT).show();
+                else if (position == 1){
+                    for (int i = 0; i< hostels.size();i++) {
+                        if (hostels.get(i).mess_rating == null || Double.parseDouble(hostels.get(i).mess_rating) < 3.5){
+                            hostels.remove(i);
+                            i--;
+                        }
+                    }
+                    hLAdapter.notifyDataSetChanged();
+                }
+                else if (position == 2){
+                    for (int i = 0; i< hostels.size();i++) {
+                        if (hostels.get(i).cleanliness_rating == null || Double.parseDouble(hostels.get(i).cleanliness_rating) < 3.5){
+                            hostels.remove(i);
+                            i--;
+                        }
+                    }
+                    hLAdapter.notifyDataSetChanged();
+                }
+                else if (position == 3){
+                    for (int i = 0; i< hostels.size();i++) {
+                        if (hostels.get(i).safety_rating == null || Double.parseDouble(hostels.get(i).safety_rating) < 3.5){
+                            hostels.remove(i);
+                            i--;
+                        }
+                    }
+                    hLAdapter.notifyDataSetChanged();
+                }
+                else if (position == 4){
+                    for (int i = 0; i< hostels.size();i++) {
+                        if (hostels.get(i).discipline_rating == null || Double.parseDouble(hostels.get(i).discipline_rating) < 3.5){
+                            hostels.remove(i);
+                            i--;
+                        }
+                    }
+                    hLAdapter.notifyDataSetChanged();
+                }
+                else {
+                    for (int i = 0; i< hostels.size();i++) {
+                        if (hostels.get(i).time_strictness_rating == null || Double.parseDouble(hostels.get(i).time_strictness_rating) > 3){
+                            hostels.remove(i);
+                            i--;
+                        }
+                    }
+                    hLAdapter.notifyDataSetChanged();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
     }
 
     @Override

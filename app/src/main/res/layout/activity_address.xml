@@ -38,8 +38,9 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/houseNo"
                 android:inputType="number"
+                android:maxLength="3"
                 android:layout_marginLeft="60dp"
-                android:layout_marginRight="60dp"/>
+                android:layout_marginRight="60dp" />
 
             <EditText
                 android:id="@+id/et_streetNo_address_activity"
@@ -48,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/streetNo"
                 android:inputType="number"
+                android:maxLength="3"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp"/>
 
@@ -59,6 +61,7 @@
                 android:layout_marginTop="10dp"
                 android:hint="@string/postalCode"
                 android:inputType="number"
+                android:maxLength="6"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp"/>
 
@@ -78,6 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/city"
+                android:inputType="text"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp"/>
 
