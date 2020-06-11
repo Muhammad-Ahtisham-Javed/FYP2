@@ -99,7 +99,7 @@ public class MapsActivity extends AppCompatActivity implements
             @Override
             public void onPlaceSelected(Place place) {
                 latLong = place.getLatLng();
-//                Toast.makeText(getApplicationContext(), "Lat: " + latLong.latitude + "  Long: " + latLong.longitude, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Lat: " + latLong.latitude + "  Long: " + latLong.longitude, Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(), HostelsList.class);
                 i.putExtra("latitude",latLong.latitude);
                 i.putExtra("longitude",latLong.longitude);

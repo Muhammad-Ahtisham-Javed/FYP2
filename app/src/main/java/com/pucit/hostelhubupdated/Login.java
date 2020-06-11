@@ -53,6 +53,8 @@ public class Login extends AppCompatActivity {
                     obj.password = pass;
 
                     new is_valid_user_asynctask_login_activity(Login.this).execute(obj);
+                    textinputusername.setText("");
+                    textinputpassword.setText("");
 
                 } else {
 

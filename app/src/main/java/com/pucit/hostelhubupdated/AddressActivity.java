@@ -202,7 +202,7 @@ public class AddressActivity extends AppCompatActivity {
                             i.putExtra("code", rand);
 
                             new send_email_asynctask().execute(rand.toString(), obj.email);
-                            Toast.makeText(AddressActivity.this, "Code has been sent to email!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AddressActivity.this, "Code has been sent to email. Email may take few minutes!", Toast.LENGTH_SHORT).show();
                             startActivityForResult(i, 100);
                             finish();
 
@@ -349,18 +349,7 @@ public class AddressActivity extends AppCompatActivity {
                             obj.city = cty;
 
 
-                            new is_already_a_hostel_asynctask_address_activity(AddressActivity.this).execute(obj);
-                            Handler handler = new Handler();
-                            handler.postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    if (hostelID != null) {
-                                        btn_choose.setVisibility(View.VISIBLE);
-                                        btn_upload.setVisibility(View.VISIBLE);
-                                    }
-                                }
-                            }, 4000);
-                            btn_anonymous.setVisibility(View.INVISIBLE);
+                            new is_already_a_hostel_asynctask_address_activity(AddressActivity.this,btn_anonymous,btn_choose,btn_upload).execute(obj);
 
 
                         } else if (isValidString(l) == false)

@@ -43,6 +43,7 @@ public class delete_seeker_account_asynctask_hostelseekerhome_activity extends A
                     Database.deleteUser(ds.getKey());
                 }
                 progressDialog.dismiss();
+                SessionManager.destroyUser(context);
                 Intent i = new Intent(context, Login.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 context.startActivity(i);

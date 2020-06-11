@@ -86,11 +86,11 @@ public class AddHostel extends AppCompatActivity {
 
                                 if (validate_hostel_name() && validate_total_rooms() && validate_available_rooms() &&
                                         validate_single_bed() && validate_double_bed() && validate_dormitory() &&
-                                        validateHostelType()) {
+                                        validateHostelType() && validateSomeParameters()) {
 
                                     hostel.name = hostelName.getText().toString();
                                     hostel.total_rooms = Integer.parseInt(totalNoOfRooms.getText().toString());
-                                    hostel.available_rooms = Integer.parseInt(totalNoOfRooms.getText().toString());
+                                    hostel.available_rooms = Integer.parseInt(availableRooms.getText().toString());
                                     hostel.single_bed_rent = Integer.parseInt(s_bed.getText().toString());
                                     hostel.double_bed_rent = Integer.parseInt(d_bed.getText().toString());
                                     hostel.dormitory_rent = Integer.parseInt(dorm.getText().toString());
@@ -278,14 +278,14 @@ public class AddHostel extends AppCompatActivity {
             availableRooms.setError("Total no of rooms should be less than available no of rooms!");
             return false;
         }
-        if ((Integer.parseInt(s_bed.getText().toString()) < Integer.parseInt(d_bed.getText().toString())) ||
-                (Integer.parseInt(s_bed.getText().toString()) < Integer.parseInt(dorm.getText().toString())) ||
-                (Integer.parseInt(d_bed.getText().toString()) < Integer.parseInt(dorm.getText().toString()))){
-            s_bed.setError("Conflicting values for bed rents!");
-            d_bed.setError("Conflicting values for bed rents!");
-            dorm.setError("Conflicting values for bed rents!");
-            return false;
-        }
+//        if ((Integer.parseInt(s_bed.getText().toString()) < Integer.parseInt(d_bed.getText().toString())) ||
+//                (Integer.parseInt(s_bed.getText().toString()) < Integer.parseInt(dorm.getText().toString())) ||
+//                (Integer.parseInt(d_bed.getText().toString()) < Integer.parseInt(dorm.getText().toString()))){
+//            s_bed.setError("Conflicting values for bed rents!");
+//            d_bed.setError("Conflicting values for bed rents!");
+//            dorm.setError("Conflicting values for bed rents!");
+//            return false;
+//        }
         return true;
     }
 

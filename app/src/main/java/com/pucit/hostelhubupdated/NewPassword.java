@@ -50,7 +50,7 @@ public class NewPassword extends AppCompatActivity {
             et_newPass.setError("Please input Password!");
             return false;
         }
-        else if (et_newPass.getText().toString().length() < 6){
+        else if (et_newPass.getText().toString().length() < 7){
             et_newPass.setError("Please input password containing more than 6 characters!");
             return false;
         }
@@ -62,7 +62,7 @@ public class NewPassword extends AppCompatActivity {
             et_confirmPass.setError("Please input Password!");
             return false;
         }
-        else if (et_confirmPass.getText().toString().length() < 6){
+        else if (et_confirmPass.getText().toString().length() < 7){
             et_confirmPass.setError("Please input password containing more than 6 characters!");
             return false;
         }

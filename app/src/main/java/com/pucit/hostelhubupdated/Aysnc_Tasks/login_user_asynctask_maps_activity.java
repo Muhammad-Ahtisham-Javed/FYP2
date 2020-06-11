@@ -57,11 +57,10 @@ public class login_user_asynctask_maps_activity extends AsyncTask<String,Void,Vo
                         progressDialog.dismiss();
                         ((Activity)context).startActivityForResult(i,100);
                     }
-                    else{
-                        progressDialog.dismiss();
-                        Toast.makeText(context,"Uable to login. Please try again",Toast.LENGTH_SHORT).show();
-                    }
 
+                }else{
+                    progressDialog.dismiss();
+                    Toast.makeText(context,"Uable to login. Please try again",Toast.LENGTH_SHORT).show();
                 }
             }
 
